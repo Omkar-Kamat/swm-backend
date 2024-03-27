@@ -8,7 +8,7 @@ const cors = require('cors');
 
 // middleware
 app.use(cors({
-    origin:`${process.env.FRONTEND}`
+    origin:[`${process.env.FRONTEND}`,"http://localhost:3000"]
 }));
 app.use(express.json());
 
