@@ -16,7 +16,7 @@ app.use((req,res,next)=>{
 
 app.use('/api/survey',survey);
 
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect("mongodb+srv://mail4omkarkamat:l9f6SLbOeYUHRbM6@cluster0.jan9eju.mongodb.net/")
 .then(()=>{
     app.listen(PORT,()=>{
         console.log("DB connected and App listening on PORT " + PORT );
