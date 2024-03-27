@@ -9,7 +9,7 @@ const cors = require('cors');
 // middleware
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:3000","https://pro-che-swm.onrender.com"]
+    origin: "https://pro-che-swm.onrender.com",
 }));
 
 app.use((req,res,next)=>{
