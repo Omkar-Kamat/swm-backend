@@ -7,7 +7,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // middleware
-
+app.use(cors({
+    origin:`${process.env.FRONTEND}`
+}));
 app.use(express.json());
 
 app.use((req,res,next)=>{
