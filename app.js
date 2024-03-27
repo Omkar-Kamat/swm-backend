@@ -7,10 +7,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // middleware
+
 app.use(express.json());
-app.use(cors({
-    origin: "https://pro-che-swm.onrender.com",
-}));
 
 app.use((req,res,next)=>{
     next();
